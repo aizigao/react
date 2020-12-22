@@ -59,6 +59,7 @@ var flattenChildrenImpl = function(res, children, nameSoFar) {
       res[storageName] = children;
     } else {
       if (type === 'object') {
+        // aizigao: CompositeComponent
         throwIf(children && children.nodeType === 1, INVALID_CHILD);
         for (key in children) {
           if (children.hasOwnProperty(key)) {

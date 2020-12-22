@@ -595,6 +595,7 @@ var ReactCompositeComponentMixin = {
     var prevState = this.state;
 
     if (this.componentWillUpdate) {
+      // aizigao: 这里用异步fn 看来也会有问题，要注意了, 而且不会阻断render, 确实没有什么用
       this.componentWillUpdate(nextProps, nextState, transaction);
     }
 
