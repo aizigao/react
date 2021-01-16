@@ -216,6 +216,8 @@ function findHostInstanceWithWarning(
   return findHostInstance(component);
 }
 
+
+// aizigao 初始化时这里生成filterRoot
 export function createContainer(
   containerInfo: Container,
   tag: RootTag,

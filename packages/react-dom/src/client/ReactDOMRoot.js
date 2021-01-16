@@ -112,7 +112,7 @@ function createRootImpl(
   tag: RootTag,
   options: void | RootOptions,
 ) {
-  // Tag is either LegacyRoot or Concurrent Root
+  // Tag is either LegacyRoot or Concurrent Root // aizigao:concurrent还未发布 在17才发布
   const hydrate = options != null && options.hydrate === true;
   const hydrationCallbacks =
     (options != null && options.hydrationOptions) || null;

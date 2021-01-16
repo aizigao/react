@@ -174,9 +174,9 @@ function warnOnInvalidCallback(callback: mixed, callerName: string): void {
 
 function legacyRenderSubtreeIntoContainer(
   parentComponent: ?React$Component<any, any>,
-  children: ReactNodeList,
+  children: ReactNodeList, // react element
   container: Container,
-  forceHydrate: boolean,
+  forceHydrate: boolean, // false
   callback: ?Function,
 ) {
   if (__DEV__) {
